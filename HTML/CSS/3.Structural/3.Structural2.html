@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/*Structural, If only one Child then oly code effected*/
+button:only-child {
+	background: darkred; 
+	color: white; /* Forecolor */
+	padding: 10px; /* Distance between content and border  */
+	border-radius: 4px;
+	cursor: pointer; /* To change the Cursor into Hand Symbol */
+}
+
+/*Structural, Here if a Child typr present once then oly affected*/
+p:only-of-type {
+    background: pink;
+	color:white;
+}
+	
+</style>
+</head>
+<body>
+
+<!--Here Code not Effected coz more then one child -->
+<div>
+  <button>Button 1</button>
+  <button style="padding: 10px; ">Button 2</button>
+  <button>Button 3</button>
+  <button>Button 4</button>
+</div>
+<!--Here Code Effected coz only one child -->
+<div>
+  <button>Button 5</button>
+</div>
+<hr />
+<!--Here Code not Effected coz more then one child -->
+<!--Here p tag present once in tht group so type is effected -->
+<div>
+  <button>Button 5</button>
+  <p>content...</p>
+  <span>content...</span>
+</div>
+<hr />
+<!--Here p tag present once in tht group so type is effected -->
+<div>
+  <p>content...</p>
+  <span>content...</span>
+</div>
+<hr />
+<!--Here p tag present more then once in group so type is not effected -->
+<div>
+  <p>content...</p>
+  <p>content...</p>
+</div>
+
+</body>
+</html>

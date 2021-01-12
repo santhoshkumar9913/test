@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--Inside style tag comment place in /*...*/ -->
+<style>
+/*--Only affect rest of tag inside p Tag*/
+p > * {
+    color: orange;
+}
+/*Only Affect for Mentioned Tag*/
+h2 { color: skyblue; }
+p { color: pink; }
+/*Common for Mentioned Tag */
+input, textarea, select {
+    display: block;
+    margin: 10px 0px;
+    background: #FFF0D2;
+    padding: 7px;
+    width: 240px;
+    border: tan 1px solid;
+    border-radius: 3px;
+}
+/*  for particular
+p.class1 { }
+#ad1 {
+    width: 768px;
+    height: 120px;
+    background: #CCC;
+    margin: 0px auto;
+}*/
+</style>
+</head>
+<body>
+<p>Paragraph content ...</p>
+<p>Paragraph <b>content</b> ...</p>
+<p><u>Paragraph</u> content ...</p>
+<p>Haiiii
+ <code>Code</code>
+</p>
+
+<h2>Some Stuff</h2>
+<p>Stuff inside my paragraph...</p>
+<h2>More Stuff</h2>
+<p>Stuff inside my paragraph...</p>
+
+<form>
+<input name="firstname" placeholder="First Name" required>
+<input name="lastname" placeholder="Last Name">
+<select name="country">
+  <option value="USA">USA</option>
+  <option value="Canada">Canada</option>
+  <option value="Mexico">Mexico</option>
+</select>
+<textarea name="bio" placeholder="Describe yourself"></textarea>
+<input type="submit">
+</form>
+</body>
+</html>

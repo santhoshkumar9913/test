@@ -1,0 +1,40 @@
+
+#header 
+{
+    background-color:red;
+    color:white;
+    padding:0px;
+		
+}
+#header h1
+{
+		text-align:center;
+}
+#header h2
+{
+		text-align:Right;
+}
+#nav 
+{
+    line-height:50px;
+    background-color:silver;
+	color:blue;
+    height:500px;
+    width:15%;
+    float:left;
+    padding:10px;	      
+}
+#section 
+{
+    width:80%
+    float:left;
+    padding:30px;
+}
+#footer 
+{
+    background-color:red;
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:5px;	 	 
+}

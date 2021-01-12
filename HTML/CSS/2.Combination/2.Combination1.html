@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/*Combination of tag Parent Child Method "(All Child Affectted)"*/
+div li{ 
+    color:green; 
+}
+
+/*Combination of tag Parent Child Method  "(All Child Immediate to parent Only Affectted)" */
+div < p{ 
+    color:red; }
+	
+</style>
+</head>
+<body>
+
+<div>
+  <ul>
+    <li>List Item</li>
+    <li>List Item</li>
+    <li>List Item</li>
+  </ul>
+</div>
+
+<ul>
+    <li>List Item</li>
+    <li>List Item</li>
+    <li>List Item</li>
+</ul>
+
+<div>
+  <p>Paragraph content ...</p>
+  <article>
+    <p>Paragraph content ...</p>
+  </article>
+  <p>Paragraph content ...</p>
+</div>
+  
+  
+  
+  
+  
+  <form>
+<input name="firstname" placeholder="First Name" required>
+<input name="lastname" placeholder="Last Name">
+<select name="country">
+  <option value="USA">USA</option>
+  <option value="Canada">Canada</option>
+  <option value="Mexico">Mexico</option>
+</select>
+<textarea name="bio" placeholder="Describe yourself"></textarea>
+<input type="submit">
+</form>
+</body>
+</html>

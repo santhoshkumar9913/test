@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--Inside style tag comment place in /*...*/ -->
+<style>
+/*--Only affect rest of tag inside p Tag*/
+p > * {
+    color: orange;
+}
+/*Only Affect for Mentioned Tag*/
+h2 { color: skyblue; }
+p { color: pink; }
+</style>
+</head>
+<body>
+<h1>Only affect a tag present inside of p Tag </h1>
+<p>Paragraph content ...</p>
+<p>Paragraph <b>content</b> ...</p>
+<p><u>Paragraph</u> content ...</p>
+<p>Haiiii
+ <code>Code</code>
+</p>
+<h2>Some Stuff</h2>
+<p>Stuff inside my paragraph...</p>
+<h2>More Stuff</h2>
+<p>Stuff inside my paragraph...</p>
+</body>
+</html>

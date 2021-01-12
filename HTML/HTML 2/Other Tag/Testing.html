@@ -1,0 +1,37 @@
+<!--
+<!DOCTYPE html>
+<html>
+<body bgcolor="#b5dcb3">
+
+<li tabindex="1">Content Editable</li>
+<p contenteditable="true">This is a paragraph. It is editable. Try to change this text.</p>
+<li>Content Direction</li>
+<p dir="rtl" >This is a paragraph. It is editable. Try to change this text.</p>
+<li tabindex="3">Non-Copy Content When Dragable</li>
+<p draggable="true">This is a paragraph. It is editable. Try to change this text.</p>
+<li tabindex="4">Content spellcheck</li>
+<p draggable="true">This is a paragraph. It is editaable. Try to change this text.</p>
+<li tabindex="2">Content tabindex</li>
+<div draggable="true" dropzone="copy">dropzone="copy"</div>
+
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html>
+<body onbeforeunload="return myFunction()">
+
+<p>Close this window, press F5 or click on the link below to invoke the onbeforeunload event.</p>
+
+<a href="https://www.w3schools.com">Click here to go to w3schools.com</a>
+  
+<script>
+function myFunction() 
+{
+  return "";
+}
+</script>
+
+</body>
+</html>

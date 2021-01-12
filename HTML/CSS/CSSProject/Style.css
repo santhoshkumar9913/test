@@ -1,0 +1,22 @@
+<head>
+<style>
+body{ margin:0px }
+div#top{ background:red repeat-x; color:; height:100px; font-size:36px; padding:20px; }
+div#middleLeft{ background:silver; height:500px; width:20%; float:left; font-size:20px; padding:10px; }
+div#middleRight{ background:white; height:420px; width:65%; float:right; padding:50px; }
+div#bottom{ background:red repeat-x; color:white; clear:both; height:25px; padding:5px; }
+
+div#myDIV{ -webkit-animation: mymove 5s infinite; animation: mymove 5s infinite; }
+@keyframes mymove{ 50% {font: 50px bold;} from{color:white;} to{color:green;} }
+
+p{ background:red repeat-x; color:white; font-size:25px; }
+
+td#email_status {
+    display: none;	
+}
+td+inpu#email:focus ~ td#email_status {
+	display: inline;
+}
+
+</style>
+</head>

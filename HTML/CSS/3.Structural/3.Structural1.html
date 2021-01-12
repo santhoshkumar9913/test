@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/*Structural, Here 1st Child oly affected*/
+li:first-of-type {
+	color: red;
+}
+
+/*Structural, Here last Child oly affected*/
+li:last-of-type {
+    color: pink;
+}
+
+/*Structural, Here specified no of Child oly affected*/
+li:nth-of-type(2) {
+    color:#F0F;
+}
+	
+	
+</style>
+</head>
+<body>
+
+<ol>
+  <li>List item</li>
+  <li>List item</li>
+  <li>List item</li>
+  <li>List item</li>
+</ol>
+<ol>
+  <li>List item</li>
+  <li>List item</li>
+  <li>List item</li>
+  <li>List item</li>
+</ol>
+
+</body>
+</html>

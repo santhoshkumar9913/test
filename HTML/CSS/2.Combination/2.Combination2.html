@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/*Combination of tag Parent Child Method "(All Child Affectted)"*/
+div li{ 
+    color:#F00; 
+}
+
+/*Combination of tag Parent Child Method  "(All Child Immediate to parent Only Affectted)" */
+div > p{ 
+    color: red; }
+
+/*Combination of tag Parent Child Method  "(First Child Immediate to parent Only Affectted)" */	
+h3 + p {
+    font-family:"Comic Sans MS", cursive;
+    text-decoration:underline;
+	color:green;
+}
+
+	
+</style>
+</head>
+<body>
+
+<div>
+  <ul>
+    <li>List Item</li>
+    <li>List Item</li>
+    <li>List Item</li>
+  </ul>
+</div>
+
+<ul>
+    <li>List Item</li>
+    <li>List Item</li>
+    <li>List Item</li>
+  </ul>
+
+<div>
+  <p>Paragraph content ...</p>
+  <article>
+    <p>Paragraph content ...</p>
+  </article>
+</div>
+  
+<h3>Some Stuff</h3>
+<p>Stuff inside my paragraph...</p>
+<p>Stuff inside my paragraph...</p>
+<p>Stuff inside my paragraph...</p>
+<h3>More Stuff</h3>
+<p>Stuff inside my paragraph...</p>
+<p>Stuff inside my paragraph...</p>
+<p>Stuff inside my paragraph...</p>  
+  
+  
+  
+  <form>
+<input name="firstname" placeholder="First Name" required>
+<input name="lastname" placeholder="Last Name">
+<select name="country">
+  <option value="USA">USA</option>
+  <option value="Canada">Canada</option>
+  <option value="Mexico">Mexico</option>
+</select>
+<textarea name="bio" placeholder="Describe yourself"></textarea>
+<input type="submit">
+</form>
+</body>
+</html>

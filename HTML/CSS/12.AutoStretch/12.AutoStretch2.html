@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div#multi_column {
+    width: 100%;
+    margin: 0px auto;
+	-webkit-column-count: 3;
+	-webkit-column-rule: 2px solid #000;
+	-moz-column-count: 3;
+	-moz-column-rule: 2px solid #000;
+	column-count: 3;
+	column-rule: 2px solid #000;
+}
+div#multi_column > div {
+    margin-bottom: 20px;
+	padding:16px;
+	border: #000 1px solid;
+}
+/* odd or even proceed like this way als0 */
+div#multi_column > div:nth-child(2n+0) {
+	background: #CAE4FF;
+}
+/* odd or even proceed like this way als0 */
+div#multi_column > div:nth-child(2n+1) {
+    background: #A4D1FF;
+}
+</style>
+<script>
+function sentence(num){
+	var result = "", mysentence = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. ";
+    for(var i = 0; i < num; i++){ result += mysentence; } return result;
+}
+</script>
+</head> 
+<body>
+<h1 style="text-align:center;">CSS3 Multi-Column Layout Web Design Tutorial</h1>
+<div id="multi_column">
+  <div>1. <script>document.write(sentence(3));</script></div>
+  <div>2. <script>document.write(sentence(8));</script></div>
+  <div>3. <script>document.write(sentence(12));</script></div>
+  <div>4. <script>document.write(sentence(7));</script></div>
+  <div>5. <script>document.write(sentence(14));</script></div>
+  <div>6. <script>document.write(sentence(6));</script></div>
+  <div>7. <script>document.write(sentence(5));</script></div>
+  <div>8. <script>document.write(sentence(9));</script></div>
+  <div>9. <script>document.write(sentence(2));</script></div>
+  <div>10. <script>document.write(sentence(11));</script></div>
+  <div>11. <script>document.write(sentence(12));</script></div>
+  <div>12. <script>document.write(sentence(8));</script></div>
+</div>
+</body> 
+</html>

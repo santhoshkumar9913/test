@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Using Image in Webpage</title>
+</head>
+<body>
+<p>Simple Image Insert</p>
+<a href="#">
+<img src="/D:/Html/Hyperlink Tag/Image Hyperlink/google.jpg" alt="Test Image" ismap>
+</a>
+ 
+<!-- Usemap is proceed by using map and area tag -->
+<ul>
+ <li> Map tag contains the name of the usemap Image <li>
+ <li>Area is Inside of map Tag, Area tag contains shape,coords,href and alt</li>
+ <li>
+	<ul>
+	<li> Shape=>rect->Co-Ordinates= x1 , y1 , x2 , y2 </li>
+	<li> Shape=>circle->Co-Ordinates= xc , yc , radius </li>
+	</ul>
+</ul>
+<img src="/D:/Html/Hyperlink Tag/Image Hyperlink/Wildcraft.jpg" alt="Image not Shown Oly Test Image" usemap="#myname">
+
+<map name="myname">
+
+<area shape="rect" 
+   coords="90,50,800,980" href="/D:/Html/Html Basics/1.Comment.html" alt="Comment" target="_self" />
+</map>
+
+<map name="myname1">
+
+   <area shape="circle" 
+   coords="100,298,58" alt="Comment 1" href="/D:/Html/Html Basics/1.Comment1.html" target="_self" />
+   
+</map>
+
+<img src="/D:/Html/Hyperlink Tag/Image Hyperlink/Wildcraft.jpg" alt="Image not Shown Oly Test Image" />
+<p> If the location is not Present then alternate text will displayed.. </p>
+<p>The usemap attribute specifies an image as a client-side image-map (an image-map is an image with clickable areas). The usemap attribute is associated with a map element's name attribute, and creates a relationship between the img and the map.</p>
+</body>
+</html>

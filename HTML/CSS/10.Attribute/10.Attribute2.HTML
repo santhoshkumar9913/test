@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+/*[^]target elements that have the specified attribute and its value begins with the specified value:*/
+a[href^="http"] {
+    color: magenta;
+}
+/*[$]target elements that have the specified attribute and its value ends with the specified value*/
+a[href$="gov"] {
+    color: red; 
+}
+/*[*]target elements that have the specified attribute and its value contains the specified substring*/
+h2[title*="econ"] {
+	color: orange; 
+}
+</style>
+</head>
+<body>
+
+<h1><p>[^]Target elements that have the specified attribute and its value begins with the specified value</p></h1>
+<a href="http://www.youtube.com">Watch Videos</a> <br>
+<a href="contact.html">Contact Us</a> <br>
+<a href="http://www.yahoo.com">Search the web</a>
+
+<h1><p>[$]Target elements that have the specified attribute and its value ends with the specified value</p></h1>
+<a href="www.usa.com">Link 1</a> <br>
+<a href="www.usa.gov">Link 2</a> <br>
+<a href="www.usa.org">Link 3</a>
+
+<h1><p>[*]Iarget elements that have the specified attribute and its value contains the specified substring</p></h1>
+<h2 title="first heading">Heading 1</h2>
+<h2 title="second heading">Heading 2</h2>
+<h2 title="third heading">Heading 3</h2>
+
+</body>
+</html>
